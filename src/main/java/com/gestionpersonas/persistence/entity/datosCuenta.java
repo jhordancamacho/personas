@@ -1,6 +1,7 @@
 package com.gestionpersonas.persistence.entity;
 import lombok.Getter;
 import lombok.Setter;
+import javax.persistence.Table;
 
 import javax.persistence.*;
 
@@ -8,7 +9,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@table(name="bill")
+@Table(name="bill")
 public class datosCuenta {
 
     @Id
