@@ -19,7 +19,7 @@ public class user {
     @Column(name="user_id")
     private Integer userId;
 
-    @Column(name="user_id")
+    @Column(name="user_password")
     private String userPassword;
 
     @Column(name="user_email")
