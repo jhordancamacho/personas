@@ -4,6 +4,7 @@ import lombok.Setter;
 import javax.persistence.Table;
 
 import javax.persistence.*;
+import java.util.List;
 
 
 @Getter
@@ -24,5 +25,8 @@ public class datosCuenta {
 
     @Column(name="user_id")
     private Integer userId;
+
+    @OneToMany(mappedBy = "datoscuenta")
+    private List<transaction> transactions;
 
 }

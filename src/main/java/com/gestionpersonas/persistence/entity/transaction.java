@@ -1,10 +1,8 @@
 package com.gestionpersonas.persistence.entity;
 
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
-import javax.persistence.Entity;
+
+import javax.persistence.*;
 
 @Entity
 @Table(name="transaction")
@@ -31,4 +29,8 @@ public class transaction {
 
     @Column(name="transaction_estate")
     private Byte transactionEstate;
+
+    @ManyToOne
+    @JoinColumn(name="bill_id",insertable = false,updatable = false)
+    private datosCuenta datoscuenta;
 }
